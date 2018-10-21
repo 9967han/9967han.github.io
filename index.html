@@ -1,0 +1,266 @@
+<!-- //자동정렬 : ctrl+k,f/ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #span {
+            display: inline;
+            text-decoration: none;
+        }
+
+        .front {
+            font-size: 0.8em;
+            color: rgb(107, 107, 107);
+        }
+
+        .back {
+            font-size: 1.0em;
+            color: black;
+        }
+
+        #nav {
+            width: 1250px;
+            height: 50px;
+            /* margin: 15px; */
+            padding: 10px;
+            list-style: none;
+            background-color: white;
+            text-align: left;
+        }
+
+        .nav_myHomePage {
+            position: relative;
+            display: inline;
+            text-decoration: none;
+        }
+
+        #nav h1 a {
+            text-decoration: none;
+        }
+
+        #nav li {
+            font-size: 18px;
+            left: 200px;
+            position: relative;
+            display: inline;
+            padding: 15px;
+        }
+
+        #nav li a {
+            text-decoration: none;
+            transition: all 0.1s ease-in-out 0.1s;
+            color: rgb(107, 107, 107);
+        }
+
+        #nav li a.list:hover {
+            font-size: 1.1em;
+            color: black
+        }
+
+        #floating {
+            position: fixed;
+            right: 50px;
+            bottom: 0px;
+            margin-bottom: 50px;
+        }
+
+        #main {
+            width: 100%;
+            height: 550px;
+            line-height: 550px;
+            background-image: url("personality.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+
+        }
+
+        .main_sentence {
+            font-size: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        #content {
+            color: #505050;
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 200%;
+            padding-top: 5em;
+            padding-left: 7em;
+            text-align: left;
+            float: left;
+            width: 60%;
+            height: 2500px;
+            background-color: white;
+        }
+
+        .content_mainsentence {
+            margin-top: 2em;
+            font-size: 35px;
+        }
+
+        .content_second {
+            margin-top: 1.2em;
+            font-size: 28px;
+        }
+
+        a:visited,
+        a:link {
+            color: rgb(255, 42, 106);
+        }
+
+        #color1 {
+            color: rgb(254, 150, 181)
+        }
+
+        #color2 {
+            color: rgb(101, 207, 252)
+        }
+
+        #color3 {
+            color: rgb(114, 133, 253)
+        }
+
+        #color4 {
+            color: rgb(255, 147, 103)
+        }
+
+        #color5 {
+            color: rgb(255, 42, 106)
+        }
+
+        #left_aside {
+            background-color: rgb(244, 244, 244);
+            float: left;
+            width: 12.5%;
+            height: 2800px;
+        }
+
+        #right_aside {
+            background-color: rgb(244, 244, 244);
+            float: right;
+            width: 12.5%;
+            height: 2800px;
+        }
+
+        #footer_top {
+            background-color: rgb(244, 244, 244);
+            width: 100%;
+            height: 150px;
+            clear: both;
+        }
+
+        #footer_bottom {
+            margin-top: 5px;
+            margin-left: 50px;
+            background-color: white;
+            width: 100%;
+            height: 75px;
+        }
+    </style>
+</head>
+<a id="floating" href="index.html">
+    <img src="topButton.png" width="50px" height="50px">
+</a>
+
+<body>
+    <div id="nav">
+        <h1 class="nav_myHomePage"><a href="index.html">
+                <span class="front">my</span><span class="back">HomePage</span>
+            </a></h1>
+        <li><a class="list" style="color: rgb(255, 147, 103)" href="index.html">PERSONALITY</a></li>
+        <li><a class="list" href="foodstyle.html">FOOD STYLE</a></li>
+        <li><a class="list" href="musicstyle.html">MUSIC STYLE</a></li>
+        <li><a class="list" href="friends.html">FRIENDS</a></li>
+        <li><a class="list" href="https://www.facebook.com/profile.php?id=100004269541222" target="_blank">CONTACT ME(FACEBOOK)</a></li>
+    </div>
+    <div id="main">
+        <h1 class="main_sentence">한상욱의 성격</h1>
+    </div>
+    <div id="left_aside"></div>
+    <div id="content">
+
+        <p class="content_mainsentence" id=color4><b>#완전협조적</b></p>
+        <h2 class="content_second">긍정적인 면</h2>
+        <ul>
+            <li>상대방에 대해 고려하며, 이해하려고 노력한다</li>
+            <li>충돌과 마찰을 피하는 편이며, 협조성이 매우 강하다</li>
+            <br>
+        </ul>
+
+        <h2 class="content_second">부정적인 면</h2>
+        <ul>
+            <li>타인의 시선을 너무 의식한다</li>
+            <li>일관성이 없으며, 칭찬에 약하다</li>
+            <li>본심을 말하지 않는다</li>
+            <br>
+        </ul>
+        <hr />
+
+        <h2 class="content_mainsentence" id=color3>#걱정쟁이</h2>
+        <h2 class="content_second">긍정적인 면</h2>
+        <ul>
+            <li>조심스럽게 행동하며, 성실한 인상을 준다</li>
+            <li>언행이 정중하다</li>
+            <br>
+        </ul>
+
+        <h2 class="content_second">부정적인 면</h2>
+        <ul>
+            <li>약간 신경질적이며, 사양하기 십상이다</li>
+            <li>생각을 정리하기 어렵다</li>
+            <br>
+        </ul>
+        <hr />
+
+        <h2 class="content_mainsentence" id=color2>#주장이 확실한편</h2>
+        <h2 class="content_second">긍정적인 면</h2>
+        <ul>
+            <li>자신의 의사를 명확하게 가지고 있으며, 결단력이 있다</li>
+            <br>
+        </ul>
+
+        <h2 class="content_second">부정적인 면</h2>
+        <ul>
+            <li>다소 솔직하지 못하며 가끔 집요하다</li>
+            <li>융통성을 발휘하기 어렵다</li>
+            <br>
+        </ul>
+        <hr />
+
+        <h2 class="content_mainsentence" id=color1>#보수적인편</h2>
+        <h2 class="content_second">긍정적인 면</h2>
+        <ul>
+            <li>위험을 고려하며 이상에 현혹되지 않는다</li>
+            <li>현재 상황에 준해서 일을 추진한다</li>
+            <br>
+        </ul>
+
+        <h2 class="content_second">부정적인 면</h2>
+        <ul>
+            <li>새로운 것을 잘 받아들이지 않는다</li>
+            <li>다소 완고하며 안전을 중시하므로 행동으로 잘 옮기지 않는다</li>
+            <br>
+        </ul>
+        <hr />
+
+        <h2 class="content_mainsentence" id=color5>#혹시 '한상욱'의 다른 성격을 알고계신다면?</h2>
+        <ul>
+            <li><a href="personality_response.html">'한상욱의 또 다른 성격'</a>에서 적어주세요!</li>
+            <li>여러분의 응답을 기다리고 있습니다</li>
+            <br>
+        </ul>
+        <hr />
+    </div>
+    <div id="right_aside"></div>
+    <div id="footer_top"></div>
+    <div id="footer_bottom">
+        <p>cell phone: 010-4501-9967</p>
+        <p>e-mail: 9967han@naver.com</p>
+    </div>
+</body>
+
+</html>

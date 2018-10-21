@@ -1,0 +1,203 @@
+<!-- //자동정렬 : ctrl+k,f/ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #span {
+            display: inline;
+            text-decoration: none;
+        }
+
+        .front {
+            font-size: 0.8em;
+            color: rgb(107, 107, 107);
+        }
+
+        .back {
+            font-size: 1.0em;
+            color: black;
+        }
+
+        #nav {
+            margin: 15px;
+            padding: 10px;
+            list-style: none;
+            background-color: white;
+            text-align: left;
+        }
+
+        .nav_myHomePage {
+            position: relative;
+            display: inline;
+            text-decoration: none;
+        }
+
+        #nav h1 a {
+            text-decoration: none;
+        }
+
+        #nav li {
+            font-size: 18px;
+            left: 200px;
+            position: relative;
+            display: inline;
+            padding: 15px;
+        }
+
+        #nav li a {
+            text-decoration: none;
+            transition: all 0.1s ease-in-out 0.1s;
+            color: rgb(107, 107, 107);
+        }
+
+        #nav li a.list:hover {
+            font-size: 1.1em;
+            color: black
+        }
+    
+        #back {
+            padding-left: 200px;
+            line-height: 150px;
+            text-align: left;
+            color: rgb(255, 147, 103);
+            font-size: 20px;
+            background-color: rgb(244, 244, 244);
+            width: 100%;
+            height: 100px;
+            clear: both;
+        }
+        a:visited, a:link{
+            color:rgb(107, 107, 107);
+        }
+
+
+        #content {
+            color: #505050;
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 200%;
+            padding-top: 3em;
+            padding-left: 7em;
+            text-align: left;
+            float: left;
+            width: 60%;
+            height: 800px;
+            background-color: white;
+        }
+        .content_mainsentence{
+            margin-top: 2em;
+            font-size: 35px;
+        }
+        .content_second{
+            margin-top: 1.2em;
+            font-size: 28px;
+        }
+
+        #color1 {color: rgb(254, 150, 181)}
+        #color2 {color: rgb(101, 207, 252)}
+        #color3 {color: rgb(114, 133, 253)}
+        #color4 {color: rgb(255, 147, 103)}
+        #color5 {color: rgb(255, 42, 106)}
+
+        #left_aside {
+            background-color: rgb(244, 244, 244);
+            float: left;
+            width: 12.5%;
+            height: 1000px;
+        }
+
+        #right_aside {
+            background-color: rgb(244, 244, 244);
+            float: right;
+            width: 12.5%;
+            height: 1000px;
+        }
+
+        #footer_top {
+            background-color: rgb(244, 244, 244);
+            width: 100%;
+            height: 150px;
+            clear: both;
+        }
+
+        #footer_bottom {
+            margin-top: 5px;
+            margin-left: 50px;
+            background-color: white;
+            width: 100%;
+            height: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <h1 class="nav_myHomePage"><a href="index.html">
+                <span class="front">my</span><span class="back">HomePage</span>
+            </a></h1>
+        <li><a class="list" style="color: rgb(255, 147, 103)" href="index.html">PERSONALITY</a></li>
+        <li><a class="list" href="foodstyle.html">FOOD STYLE</a></li>
+        <li><a class="list" href="musicstyle.html">MUSIC STYLE</a></li>
+        <li><a class="list" href="friends.html">FRIENDS</a></li>
+        <li><a class="list" href="https://www.facebook.com/profile.php?id=100004269541222" target="_blank">CONTACT ME(FACEBOOK)</a></li>
+    </div>
+    <div id="back">
+        <a href="index.html">&lt; back to personality</a>
+    </div>
+    <div id="left_aside"></div>
+    <div id="content">
+
+        <form action="thankyou_response.html">
+            <div>
+                <h2>한상욱의 또다른 성격</h2>
+                <textarea name="feedback" rows="15" cols="135"></textarea><br>
+            </div>
+            <div>
+                <h2> 개인 정보</h2>
+                이름&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br><br>
+            </div>
+            <div>
+                <fieldset>
+                    <legend> 저의 지인이신가요?</legend>
+                    <input type="radio" name="friend" value="elemantary"> 초등학교 친구
+                    <input type="radio" name="friend" value="middle"> 중학교 친구
+                    <input type="radio" name="friend" value="high"> 고등학교 친구
+                    <input type="radio" name="friend" value="university"> 대학교 친구
+                    <input type="radio" name="friend" value="family"> 가족
+                    <input type="radio" name="friend" value="teacher"> 선생님
+                    <input type="radio" name="friend" value="neighbor"> 지인
+                    <input type="radio" name="friend" value="neighborOfneighbor"> 지인의 지인
+                    <input type="radio" name="friend" value="cyber_neighber"> 인터넷 지인
+                    <input type="radio" name="friend" value="etc"> 기타
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <h2>선택 사항</h2>
+                한상욱은 어떤사람인가요?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="HanSangWook">
+                    <option value="good">좋은사람</option>
+                    <option value="bad">나쁜사람</option>
+                    <option value="jonjaegamzero">있으나 없으나</option>
+                    <option value="passion">뭐든지 열심히</option>
+                    <option value="noanswer">말을 안듣는 사람</option>
+                    <option value="uriburi">어리버리</option>
+                </select><br>
+
+            </div>
+            <hr>
+            <input type="submit" value="제출하기" />
+            <input type="reset" value="다시쓰기" />
+        </form>
+    </div>
+    <div id="right_aside"></div>
+    <div id="footer_top"></div>
+    <div id="footer_bottom">
+        <p>cell phone: 010-4501-9967</p>
+        <p>e-mail: 9967han@naver.com</p>
+    </div>
+</body>
+
+</html>

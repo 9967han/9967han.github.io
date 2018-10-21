@@ -1,0 +1,351 @@
+<!-- //자동정렬 : ctrl+k,f/ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #span {
+            display: inline;
+            text-decoration: none;
+        }
+
+        .front {
+            font-size: 0.8em;
+            color: rgb(107, 107, 107);
+        }
+
+        .back {
+            font-size: 1.0em;
+            color: black;
+        }
+
+        #nav {
+            width: 1250px;
+            height: 50px;
+            padding: 10px;
+            list-style: none;
+            background-color: white;
+            text-align: left;
+        }
+
+        .nav_myHomePage {
+            position: relative;
+            display: inline;
+            text-decoration: none;
+        }
+
+        #nav h1 a {
+            text-decoration: none;
+        }
+
+        #nav li {
+            font-size: 18px;
+            left: 200px;
+            position: relative;
+            display: inline;
+            padding: 15px;
+        }
+
+        #nav li a {
+            text-decoration: none;
+            transition: all 0.1s ease-in-out 0.1s;
+            color: rgb(107, 107, 107);
+        }
+
+        #nav li a.list:hover {
+            font-size: 1.1em;
+            color: black
+        }
+
+        #main {
+            width: 100%;
+            height: 550px;
+            line-height: 550px;
+            background-image: url("cheesecake.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+        }
+
+        .main_sentence {
+            font-size: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        #floating {
+            position: fixed;
+            right: 50px;
+            bottom: 0px;
+            margin-bottom: 50px;
+        }
+
+        #content {
+            color: #505050;
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 200%;
+            padding-top: 5em;
+            padding-left: 7em;
+            text-align: left;
+            float: left;
+            width: 60%;
+            height: 3000px;
+            background-color: white;
+        }
+
+        .content_mainsentence {
+            margin-top: 2em;
+            font-size: 35px;
+        }
+
+        .content_secondsentence {
+            text-align: center;
+        }
+
+        .content_img {
+            width: 400px;
+            height: 300px;
+            float: left;
+            font-family: sans-serif;
+        }
+
+        .content_text {
+            height: 200px;
+            float: right;
+        }
+
+
+        caption {
+            caption-side: bottom;
+        }
+
+        table {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 500px;
+            border-collapse: collapse;
+            border: 2.5px solid rgb(107, 107, 107);
+        }
+
+        th {
+            background-color: rgb(255, 147, 103);
+            color: black;
+        }
+
+        th,
+        tr,
+        td {
+            text-align: center;
+            border-style: dotted;
+        }
+
+
+        a:visited,
+        a:link {
+            color: rgb(255, 42, 106);
+        }
+
+        #color1 {
+            color: rgb(254, 150, 181)
+        }
+
+        #color2 {
+            color: rgb(101, 207, 252)
+        }
+
+        #color3 {
+            color: rgb(114, 133, 253)
+        }
+
+        #color4 {
+            color: rgb(255, 147, 103)
+        }
+
+        #color5 {
+            color: rgb(255, 42, 106)
+        }
+
+        #left_aside {
+            background-color: rgb(244, 244, 244);
+            float: left;
+            width: 12.5%;
+            height: 3200px;
+        }
+
+        #right_aside {
+            background-color: rgb(244, 244, 244);
+            float: right;
+            width: 12.5%;
+            height: 3200px;
+        }
+
+        #footer_top {
+            background-color: rgb(244, 244, 244);
+            width: 100%;
+            height: 150px;
+            clear: both;
+        }
+
+        #footer_bottom {
+            margin-top: 5px;
+            margin-left: 50px;
+            background-color: white;
+            width: 100%;
+            height: 75px;
+        }
+    </style>
+</head>
+<a id="floating" href="foodstyle.html">
+    <img src="topButton.png" width="50px" height="50px">
+</a>
+
+<body onresize="parent.resizeTo(500,400)" onload="parent.resizeTo(500,400)">
+    <div id="nav">
+        <h1 class="nav_myHomePage"><a href="index.html">
+                <span class="front">my</span><span class="back">HomePage</span>
+            </a></h1>
+        <li><a class="list" href="index.html">PERSONALITY</a></li>
+        <li><a class="list" style="color: rgb(255, 147, 103)" href="foodstyle.html">FOOD STYLE</a></li>
+        <li><a class="list" href="musicstyle.html">MUSIC STYLE</a></li>
+        <li><a class="list" href="friends.html">FRIENDS</a></li>
+        <li><a class="list" href="https://www.facebook.com/profile.php?id=100004269541222" target="_blank">CONTACT ME(FACEBOOK)</a></li>
+    </div>
+    <div id="main">
+        <h1 class="main_sentence">한상욱의 음식취향</h1>
+    </div>
+    <div id="left_aside"></div>
+    <div id="content">
+        <p class="content_mainsentence" id=color4><b>#최근에 먹은 음식</b></p>
+        <img src="clam.jpg" class="content_img" alt="조개구이">
+        <h2 class="content_secondsentence">절친 군대가기 일주일전 <br> 부산에서 먹은 조개구이</h2>
+        <table>
+            <caption>조개구이 맛평가</caption>
+            <tr>
+                <th> 맛 </th>
+                <th> 가격 </th>
+                <th> 가게 분위기 </th>
+            </tr>
+            <tr>
+                <td> ☆☆☆☆</td>
+                <td> ☆☆☆ </td>
+                <td> ☆☆☆☆ </td>
+            </tr>
+        </table>
+        <br>
+        <img src="rawfish.jpg" class="content_img" alt="회">
+        <h2 class="content_secondsentence">그리고 우럭 회</h2>
+        <table>
+            <caption>회 맛평가</caption>
+            <tr>
+                <th> 맛 </th>
+                <th> 가격 </th>
+                <th> 가게 분위기 </th>
+            </tr>
+            <tr>
+                <td> ☆☆☆☆☆</td>
+                <td> ☆☆ </td>
+                <td> ☆☆☆☆ </td>
+            </tr>
+        </table>
+        <br>
+        <hr />
+
+        <p class="content_mainsentence" id=color3><b>#추억이 깃든 음식</b></p>
+        <img src="pasta.jpg" class="content_img" alt="파스타">
+        <h2 class="content_secondsentence">미국에서 먹은 파스타</h2>
+        <table>
+            <caption>파스타 맛평가</caption>
+            <tr>
+                <th> 맛 </th>
+                <th> 가격 </th>
+                <th> 그날의 추억 </th>
+            </tr>
+            <tr>
+                <td> ☆☆☆☆</td>
+                <td> ☆☆☆ </td>
+                <td> ☆☆☆☆☆ </td>
+            </tr>
+        </table>
+        <br><br>
+        <img src="omakase.jpg" class="content_img" alt="볶음우동">
+        <h2 class="content_secondsentence">스시집에서 이벤트 당첨으로<br> 먹은 볶음우동</h2>
+        <table>
+            <caption>볶음우동 맛평가</caption>
+            <tr>
+                <th> 맛 </th>
+                <th> 가격 </th>
+                <th> 그날의 추억 </th>
+            </tr>
+            <tr>
+                <td> ☆☆☆☆</td>
+                <td> ☆☆☆☆☆ </td>
+                <td> ☆☆☆☆☆ </td>
+            </tr>
+        </table>
+        <br>
+        <hr />
+
+        <p class="content_mainsentence" id=color2><b>#좋아하는 음식</b></p>
+        <img src="grilledpork.jpg" class="content_img" alt="부속구이">
+        <h2 class="content_secondsentence">집근처 부속구이집</h2>
+        <table>
+            <caption>부속구이 맛평가</caption>
+            <tr>
+                <th> 맛 </th>
+                <th> 가격 </th>
+                <th> 가게분위기 </th>
+            </tr>
+            <tr>
+                <td> ☆☆☆☆☆</td>
+                <td> ☆☆☆ </td>
+                <td> ☆☆ </td>
+            </tr>
+        </table>
+        <br><br>
+        <img src="okepoke.jpg" class="content_img" alt="포케">
+        <h2 class="content_secondsentence">아주대 포케맛집</h2>
+        <table>
+            <caption> 포케 맛평가</caption>
+            <tr>
+                <th> 맛 </th>
+                <th> 가격 </th>
+                <th> 가게 분위기 </th>
+            </tr>
+            <tr>
+                <td> ☆☆☆☆</td>
+                <td> ☆☆☆☆☆ </td>
+                <td> ☆☆☆☆ </td>
+            </tr>
+        </table>
+        <br>
+        <hr />
+
+        <p class="content_mainsentence" id=color1><b>#좋아하는 후식</b></p>
+        <img src="cheesecake.jpg" class="content_img" alt="치즈케익">
+        <h2 class="content_secondsentence">미국에서 순삭한 치즈케익</h2>
+        <table>
+            <caption>치즈케익 맛평가</caption>
+            <tr>
+                <th> 맛 </th>
+                <th> 가격 </th>
+                <th> 먹은속도 </th>
+            </tr>
+            <tr>
+                <td> ☆☆☆☆☆</td>
+                <td> ☆☆☆ </td>
+                <td> ☆☆☆☆☆ </td>
+            </tr>
+        </table>
+        <br><br>
+    </div>
+    <div id="right_aside"></div>
+    <div id="footer_top"></div>
+    <div id="footer_bottom">
+        <p>cell phone: 010-4501-9967</p>
+        <p>e-mail: 9967han@naver.com</p>
+    </div>
+</body>
+
+</html>
